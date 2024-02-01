@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculating factorial of a given number using reduce and for loops</title>
+</head>
+<body>
+
+
+  <script>
+    let a = prompt("Enter your number");
+    let arr = [];
+    for(let i = a ; i > 0; i--){
+      arr.push(i);
+      console.log(i);
+    }
+    console.log(arr);
+
+    let red = (a,b) =>{
+      return a * b
+    }
+
+    console.log(arr.reduce(red));
+
+  </script>
+</body>
+</html>
